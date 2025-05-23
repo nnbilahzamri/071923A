@@ -1,5 +1,5 @@
 // Replace with your own OpenWeatherMap API key
-const OPENWEATHER_KEY = 'f0d7acca3e1503821e93451aeac62ea1';
+const OPENWEATHER_APIKEY = 'f0d7acca3e1503821e93451aeac62ea1';
 
 // Elements
 const cityInput = document.getElementById('cityInput');
@@ -17,7 +17,7 @@ getWeatherBtn.addEventListener('click', () => {
 });
 
 function fetchCurrentWeather(city) {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${OPENWEATHER_KEY}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${OPENWEATHER_APIKEY}&units=metric`)
     .then(r => r.json())
     .then(data => {
       if (data.cod !== 200) throw new Error(data.message);
@@ -34,7 +34,7 @@ function fetchCurrentWeather(city) {
 }
 
 function fetchForecast(city) {
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(city)}&appid=${OPENWEATHER_KEY}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(city)}&appid=${OPENWEATHER_APIKEY}&units=metric`)
     .then(r => r.json())
     .then(data => {
       if (data.cod !== "200") throw new Error(data.message);
