@@ -9,6 +9,7 @@ const newsResultsEl   = document.getElementById('newsResults');
 getNewsBtn.addEventListener('click', () => {
   const q = newsQueryInput.value.trim();
   fetchNews(q || 'top-headlines?country=my');
+  
 });
 
 function fetchNews(path) {
