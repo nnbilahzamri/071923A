@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard – Nabilah's Blog</title>
+
+  <!-- Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Preloader CSS -->
+  <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
+
+  <!-- Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.default.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader"><div id="status">&nbsp;</div></div>
+
+  <!-- Header + Navbar (Brandy) -->
+  <header id="HOME" style="background-position:50% -125px;">
+    <div class="section_overlay">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+              <span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html#HOME">Home</a></li>
+              <li><a href="index.html#ABOUT">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container text-center">
+        <div class="home_text wow fadeInUp animated">
+          <h2>Weather Dashboard</h2>
+          <p>Get real-time weather information for any city.</p>
+          <img src="images/shape.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Weather Dashboard Section -->
+  <section class="services" id="WEATHER">
+    <div class="container">
+      <!-- City Input -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <div class="input-group" style="margin-bottom:30px;">
+            <input id="cityInput" type="text" class="form-control" placeholder="Enter city name">
+            <span class="input-group-btn">
+              <button id="getWeatherBtn" class="btn btn-primary">Get Weather</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Current Weather -->
+      <div class="row">
+        <div id="currentWeather" class="col-md-8 col-md-offset-2 text-center"></div>
+      </div>
+      <!-- Forecast Chart -->
+      <div class="row" style="margin-top:40px;">
+        <div class="col-md-10 col-md-offset-1">
+          <canvas id="forecastChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Brandy) -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Nabilah. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts (Brandy) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Your Weather JS -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <script src="js/script-weather.js"></script>
+</body>
+</html>
