@@ -1,5 +1,5 @@
 const API_KEY = 'MQ5MI9TCCHXJ'; // Replace this with your TimeZoneDB key
-const BASE_URL = 'https://api.timezonedb.com/v2.1/get-time-zone';
+const BASE_URL = 'https://api.timezonedb.com';
 
 const tzInput = document.getElementById('timezoneInput');
 const getTimeBtn = document.getElementById('getTimeBtn');
