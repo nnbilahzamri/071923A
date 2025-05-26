@@ -2,37 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Time Dashboard – Nabilah's Blog</title>
 
   <!-- Google Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
   <!-- Preloader CSS -->
-  <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
+  <link rel="stylesheet" href="css/preloader.css" type="text/css" />
 
   <!-- Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/owl.carousel.css" rel="stylesheet">
-  <link href="css/owl.theme.default.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/owl.carousel.css" rel="stylesheet" />
+  <link href="css/owl.theme.default.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
 
   <!-- Main Styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- Preloader -->
   <div id="preloader"><div id="status">&nbsp;</div></div>
 
-  <!-- Header + Navbar (Brandy) -->
+  <!-- Header -->
   <header id="HOME" style="background-position:50% -125px;">
     <div class="section_overlay">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -42,7 +42,7 @@
               <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
               <span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo" /></a>
           </div>
           <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="nav navbar-nav navbar-right">
@@ -56,7 +56,7 @@
       <div class="container text-center">
         <div class="home_text wow fadeInUp animated">
           <h2>Time Dashboard</h2>
-          <p>Fetch and display current time for any timezone.</p>
+          <p>Search current time by timezone.</p>
           <img src="images/shape.png" alt="">
         </div>
       </div>
@@ -66,40 +66,38 @@
   <!-- Time Dashboard Section -->
   <section class="services" id="TIME">
     <div class="container">
-      <!-- Timezone Input -->
+      <!-- Search Bar -->
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
           <div class="input-group" style="margin-bottom:30px;">
-            <input id="timezoneInput" type="text" class="form-control"
-                   placeholder="Enter timezone (e.g., Asia/Kuala_Lumpur)">
+            <input id="timezoneInput" type="text" class="form-control" placeholder="e.g. Asia/Kuala_Lumpur">
             <span class="input-group-btn">
-              <button id="getTimeBtn" class="btn btn-primary">Get Time</button>
+              <button id="getTimeBtn" class="btn btn-success">Get Time</button>
             </span>
           </div>
         </div>
       </div>
-      <!-- Current Time Display -->
+      <!-- Results -->
       <div class="row">
-        <div id="currentTime" class="col-md-8 col-md-offset-2 text-center"></div>
+        <div id="currentTime" class="col-md-10 col-md-offset-1"></div>
       </div>
     </div>
   </section>
 
-  <!-- Footer (Brandy) -->
+  <!-- Footer -->
   <footer>
     <div class="container text-center">
       <p>&copy; 2025 Nabilah. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts (Brandy) -->
+  <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.nicescroll.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
-  <!-- Your Time JS -->
   <script src="js/script-time.js"></script>
 </body>
 </html>
