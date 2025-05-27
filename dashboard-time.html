@@ -54,21 +54,48 @@
   <!-- Time Dashboard -->
   <section class="services" id="TIME">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <div class="input-group" style="margin-bottom:30px;">
-            <input id="timezoneInput" type="text" class="form-control" placeholder="Enter timezone (e.g., Asia/Kuala_Lumpur)" />
-            <span class="input-group-btn">
-              <button id="getTimeBtn" class="btn btn-primary">Get Time</button>
-            </span>
-          </div>
+      <div class="row mb-4">
+        <!-- Searchable input with datalist -->
+        <div class="col-sm-5">
+          <input list="timezones" id="timezoneInput" class="form-control" placeholder="Type or select timezone…" />
+          <datalist id="timezones">
+            <option value="Asia/Kuala_Lumpur">
+            <option value="Asia/Singapore">
+            <option value="Asia/Tokyo">
+            <option value="Europe/London">
+            <option value="Europe/Paris">
+            <option value="America/New_York">
+            <!-- add as many as you like -->
+          </datalist>
+        </div>
+
+        <!-- Plain dropdown -->
+        <div class="col-sm-4">
+          <select id="timezoneSelect" class="form-control">
+            <option value="">Or choose a timezone</option>
+            <option value="Asia/Kuala_Lumpur">Asia/Kuala_Lumpur</option>
+            <option value="Asia/Singapore">Asia/Singapore</option>
+            <option value="Asia/Tokyo">Asia/Tokyo</option>
+            <option value="Europe/London">Europe/London</option>
+            <option value="Europe/Paris">Europe/Paris</option>
+            <option value="America/New_York">America/New_York</option>
+            <!-- … -->
+          </select>
+        </div>
+
+        <!-- Trigger button -->
+        <div class="col-sm-3">
+          <button id="getTimeBtn" class="btn btn-primary btn-block">Add Clock</button>
         </div>
       </div>
+
+      <!-- This is where the clock(s) will be injected -->
       <div class="row">
         <div id="currentTime" class="col-md-10 col-md-offset-1 text-center"></div>
       </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
